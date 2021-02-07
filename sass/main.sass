@@ -1,0 +1,543 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	color: #1b1b1b
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+
+h1, h2, h3, h4, h5, h6
+	font-family: $default-font-h
+	color: #1b1b1b
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.top-block
+	background-color: #fff
+	height: 225px
+	h1,
+	h2
+		text-align: center
+	h1
+		margin-top: 30px
+		font-weight: bold
+	h2
+		font-weight: normal
+		font-size: 18px
+		line-height: 0
+	.info
+		text-align: center
+		padding: 20px
+		.request-a-call
+			border: 1px solid #000
+			padding: 5px 20px
+			background-color: #fff
+			margin-left: 10px
+			transition: all 0.2s
+			&:hover
+				background-color: #f6f6f6
+				border: 1px solid #d8d8d8
+				color: #989898
+				cursor: pointer
+	.top-menu
+		text-align: center
+		padding: 10px
+		background-color: #fff
+		a
+			padding: 10px
+			color: #1b1b1b
+			text-decoration: none
+			&:hover
+				background-color: #f6f6f6
+
+.top-slider
+	min-height: 450px
+	padding-top: 150px
+	background-color: #9999cc
+	position: relative
+	.slider-theses
+		div
+			text-align: center
+			color: #fff
+			p
+				padding-bottom: 30px
+	.arrow-left,
+	.arrow-right
+		color: #fff
+		font-size: 15pt
+		position: absolute
+		bottom: 0
+		z-index: 5
+		cursor: pointer
+		transition: color 0.1s
+		&:hover
+			color: #fff48c
+	.arrow-left
+		left: 440px
+	.arrow-right
+		right: 440px
+	.arrow-center
+		text-align: center
+		position: absolute
+		width: 100%
+		bottom: 0
+		left: 0
+		padding: 5px
+		a
+			padding: 35px 20px 0 20px
+			.arrow-bottom
+				position: relative
+				color: #fff
+				font-size: 30px
+				font-weight: bold
+				animation-duration: 1.5s
+				animation-delay: 2s
+				transition: color 0.1s
+				&:hover
+					color: #fff48c
+
+.services
+	background-color: #fff
+	padding: 70px 0
+	.text-services,
+	h2
+		text-align: center
+	h2
+		padding: 15px
+	.block
+		padding: 5px
+		min-height: 70px
+		width: 100%
+		color: #fff
+		border: none
+		text-align: center
+		background-color: #9999cc
+		&:hover
+			cursor: pointer
+			background-color: #7f7fc4
+	.services-blocks
+		div
+			padding: 5px
+
+.advantages
+	background-color: #9999cc
+	padding: 50px 0
+	.fon-block
+		width: 100px
+		height: 100px
+		margin: auto
+		background-image: url("../img/advantages/cloud.png")
+		text-align: center
+		i
+			color: #9999cc
+			font-size: 36px
+			padding-top: 33px
+	p
+		color: #fff
+		text-align: center
+		padding-top: 15px
+		margin-bottom: 0
+
+.thanks
+	padding: 70px 0
+	h2,
+	h4
+		text-align: center
+	h4
+		padding-top: 15px
+		font-weight: normal
+	.block
+		text-align: center
+		span.number
+			font-size: 72px
+			font-weight: bold
+			color: #9999cc
+		div.info
+			padding-left: 70px
+			padding-right: 70px
+
+.arbitrage-practice
+	background-color: #9999cc
+	padding: 70px 0
+	.info
+		h2,
+		p
+			text-align: center
+			color: #fff
+		p
+			padding-top: 15px
+	.block-of-questions
+		padding-top: 30px
+		.collapsible
+			background-color: #9999cc
+			color: white
+			cursor: pointer
+			width: 100%
+			border: none
+			padding: 0
+			text-align: left
+			outline: none
+			margin-top: 2px
+			margin-bottom: 2px
+			&::before
+				content: "\f105"
+				font-family: "FontAwesome"
+				position: absolute
+				left: 0
+			&:hover
+				color: #fff48c
+		.active
+			// color: #fdd9db
+			color: #fff8b4
+			&::before
+				content: "\f107"
+				font-family: "FontAwesome"
+				margin-right: 5px
+				transition: all 3s
+		.content
+			padding: 0 10px
+			border-left: 3px #fff solid
+			max-height: 0
+			overflow: hidden
+			transition: all 0.5s
+			p
+				color: #4f4646
+				text-align: left
+			button
+				background-color: #fff8b4
+				color: #626161
+				border: none
+				padding: 5px 20px
+				cursor: pointer
+				&:hover
+					background-color: #fff48c
+
+.employees
+	background-color: #fff
+	padding: 70px 0
+	.info
+		h2,
+		p
+			text-align: center
+		p
+			padding-top: 15px
+	.associate
+		.image
+			border-radius: 50%
+			width: 150px
+			height: 150px
+			background-image: url("../img/employees/1.jpg")
+			background-size: cover
+			margin: 15px auto
+		h3,
+		.prof,
+		.content
+			text-align: center
+		.content
+			padding: 5px
+		h3
+			margin-bottom: 0
+		.prof
+			font-size: 14px
+			color: #5d5d5d;
+	.social
+		text-align: center
+		img
+			width: 25px
+			height: 25px
+			display: inline-block
+	.associate-1
+		.image
+			background-image: url("../img/employees/1.png")
+	.associate-2
+		.image
+			background-image: url("../img/employees/2.png")
+	.associate-3
+		.image
+			background-image: url("../img/employees/3.png")
+	.associate-4
+		.image
+			background-image: url("../img/employees/4.png")
+	.sliders-employees-circle-left,
+	.sliders-employees-circle-right
+		color: #9999cc
+		font-size: 40px
+		position: absolute
+		top: 168px
+		z-index: 5
+		cursor: pointer
+		transition: all 0.2s
+		&:hover
+			opacity: 0.8
+	.sliders-employees-circle-left
+		left: -70px
+	.sliders-employees-circle-right
+		right: -70px
+
+.contacts
+	padding: 70px 0
+	background-color: #9999cc
+	.map
+		width: 100%
+		height: 475px
+	.info
+		p
+			color: #fff
+		.contacts-header
+			font-size: 24px
+	.contacts-form
+		input,
+		textarea,
+		button
+			padding: 5px 10px
+			margin: 3px 0
+			border: none
+		input,
+		button
+			width: 50%
+		textarea
+			width: 100%
+			height: 167px
+			margin-bottom: 0
+		button
+			background-color: #fff8b4
+			float: right
+			color: #6e6e9b
+			cursor: pointer
+			transition: all 0.3s
+			&:hover
+				background-color: #fff48c
+
+.footer
+	padding: 50px 0
+	// background-color: #996633
+	background-color: #454443
+	text-align: left
+	color: #fff
+	p
+		margin-bottom: 0
+	.social
+		margin: 5px 0
+		img
+			padding: 2px
+			width: 30px
+			height: 30px
+	.footer-link
+		font-size: 24px
+		a
+			color: #fff
+			text-decoration: none
+			transition: all 0.2s
+			&:hover
+				color: #ffff8b
+
+.go_to_top
+	position: fixed
+	// color: #fff
+	color: #3f3434
+	text-shadow: 0px 0px 25px #fff, 0 0 10px #fff
+	right: -100px
+	bottom: 70px
+	font-size: 50px
+	z-index: 5
+	cursor: pointer
+	transition: all 0.2s
+	opacity: 0
+	transition: right 0.3s, opacity 0.3s
+	&:hover
+		color: #6e6e6e
+
+.go_to_top_active
+	right: 50px
+	opacity: 1
+
+.stuck
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 10
+	width: 100%
+	border-bottom: 2px solid #99c
+
+.modal-call-order
+	display: none
+	position: fixed
+	z-index: 10000
+	padding-top: 100px
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	overflow: auto
+	background-color: rgb(0,0,0)
+	background-color: rgba(0,0,0,0.95)
+	background-size: 500px
+	.modal-content
+		background-color: #fefefe
+		margin: auto
+		padding: 50px
+		border: 1px solid #888
+		width: 500px
+		.close
+			color: #aaaaaa
+			float: right
+			font-size: 20px
+			font-weight: bold
+			&:hover,
+			&:focus
+				color: #000
+				text-decoration: none
+				cursor: pointer
+		form
+			input,
+			button
+				padding: 5px 10px
+				width: 100%
+				margin: 5px
+				border-width: 0 0 1px 0
+				&:focus
+					border-color: #ffa529
+			button
+				background-color: #ffa529
+				color: #fff
+				border: none
+				cursor: pointer
+				transition: all 0.2s
+				&:hover
+					background-color: #e99700
+
+div#jivo-iframe-container
+	z-index: 2000 !important
+
+div#jivo_container
+	z-index: 2000 !important
+
+jdiv
+	z-index: 5000 !important
+
+.menu-mobyle
+	text-align: center
+	font-size: 25px
+	background-color: #fff
+	span
+		cursor: pointer
+		&:hover
+			color: #676767
+		i
+			margin-right: 10px
+
+.overlay
+	min-height: 100%
+	width: 0
+	position: fixed
+	z-index: 10000
+	left: 0
+	top: 0
+	background-color: rgb(0,0,0)
+	background-color: rgba(0,0,0, 0.95)
+	overflow-x: hidden
+	transition: 0.5s
+	padding-top: 10px
+	.overlay-content
+		position: relative
+		width: 100%
+		text-align: center
+		a
+			color: #818181
+			display: block
+			font-size: 20px
+			padding: 5px
+			text-decoration: none
+			&:hover
+				background-color: #2a2a2a
+				color: #fff
+	.closebtn
+		color: #818181
+		margin: 10px
+		padding: 10px
+		font-size: 20px
+		&:hover
+			color: #fff
+
+.info-404
+	.content
+		height: 500px
+		background-image: url(../img/404.png)
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center center
+	.link
+		text-align: center
+		padding: 40px
+		a
+			border: 1px solid #000
+			padding: 5px 20px
+			margin: 10px
+			color: #1b1b1b
+			text-decoration: none
+			transition: all 0.2s
+			&:hover
+				color: #828282
+				border: 1px solid #828282
+
+#loader
+	position: fixed
+	left: 50%
+	top: 50%
+	z-index: 10000 !important
+	width: 150px
+	height: 150px
+	margin: -75px 0 0 -75px
+	border: 16px solid #f3f3f3
+	border-radius: 50%
+	border-top: 16px solid #3498db
+	width: 120px
+	height: 120px
+	-webkit-animation: spin 2s linear infinite
+	animation: spin 2s linear infinite
+
+@-webkit-keyframes spin
+	0%
+		-webkit-transform: rotate(0deg)
+	100%
+		-webkit-transform: rotate(360deg)
+
+@keyframes spin
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
+#mainBlock
+	opacity: 0
+
+
+@import "media" // Always at the end

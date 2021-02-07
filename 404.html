@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>ПравДА - юридическая компания</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+	<!-- Кнопка вверх -->
+	<i id="go_to_top" class="fa fa-angle-double-up go_to_top animated infinite pulse" aria-hidden="true"></i>
+
+	<!-- Верхний информационный блок -->
+	<div class="top-block">
+		<div class="container">
+			<h1>ПравДА</h1>
+			<h2>Юридическая компания</h2>
+			<div class="row">
+				<div class="col-md-2 col-lg-3"></div>
+				<div class="col-md-8 col-lg-6">
+					<div class="info">
+						<span class="number">+7 (930) 73-54-533</span>
+						<button id="call-order-button" class="request-a-call">Заказать звонок</button>
+					</div>
+				</div>
+				<div class="col-md-2 col-lg-3"></div>
+			</div>
+			<div class="top-menu menu-desktop sticky-element">
+				<a href="#">Главная страница</a>
+			</div>
+			<div class="menu-mobyle sticky-element-mobyle">
+				<span onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i>Меню</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="info-404">
+		<div class="content"></div>
+		<div class="link">
+			<a href="#">Главная страница</a>
+		</div>
+	</div>
+
+	<!-- Блок Подвал -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<!-- <div class="col-lg-1"></div> -->
+				<div class="col-md-7 col-lg-8">
+					<p class="footer-link"><a href="#">ПравДА</a></p>
+					<p>Юридическая компания «ПравДА» оказывает профессиональные юридические услуги по региону и всей территории РФ физическим и юридическим лицам в суде и в до судебном порядке.</p>
+				</div>
+				<div class="col-md-5 col-lg-4">
+					<div class="social">
+						<a href="#"><img src="img/footer/vk.png" alt="Группа Вконтакте"></a>
+						<a href="#"><img src="img/footer/ok.png" alt="Группа Одноклассники"></a>
+						<a href="#"><img src="img/footer/f.png" alt="Группа Facebook"></a>
+					</div>
+					<p>Почта: mail@gmail.com<br>Телефон: <nobr>+7 (920) 34-65-354</nobr><br>Телефон: <nobr>+7 (920) 34-65-256</nobr></p>
+				</div>
+				<!-- <div class="col-lg-1"></div> -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Модальное окно "Заказать звонок" -->
+	<div id="modal-call-order" class="modal-call-order">
+		<div class="modal-content">
+			<span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+			<h2>Заказать звонок</h2>
+			<p>Укажите свой контактный телефон, нажмите кнопку отправить и мы перезвоним Вам в кратчайшие сроки.</p>
+			<form method="POST" action="#">
+				<input type="text" name="fname" placeholder="Укажите ваше имя" required><br>
+				<input type="text" name="phone" placeholder="Укажите ваш телефон" required><br>
+				<button type="submit">Отправить</button>
+				<input type="hidden" name="send-cell">
+			</form>
+		</div>
+	</div>
+
+	<!-- Мобильное меню -->
+	<div id="mobyle-menu" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+		<div class="overlay-content">
+			<a href="#">Главная страница</a>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+	<!-- BEGIN JIVOSITE CODE {literal} -->
+	<script type='text/javascript'>
+	(function(){ var widget_id = 'vOVQYUQx7d';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+	</script>
+	<!-- {/literal} END JIVOSITE CODE -->
+
+</body>
+</html>

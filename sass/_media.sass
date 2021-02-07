@@ -1,0 +1,155 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+// Стили наследуются от большего экрана к меньшему
+
+//Extra large: ≥1200px ---- проверил
++media-breakpoint-down(xl)
+	.menu-mobyle
+		display: none
+	.menu-desktop
+		display: block
+	.padding-block
+		padding: 0
+
+//Large: ≥992px ---- проверил
++media-breakpoint-down(lg)
+	.top-slider
+		.arrow-left
+			left: 360px
+		.arrow-right
+			right: 360px
+	.advantages
+		.advantages-block
+			padding-left: 5px
+			padding-right: 5px
+	.thanks
+		.block
+			div.info
+				padding-left: 50px
+				padding-right: 50px
+
+//Medium: ≥768px ---- проверил
++media-breakpoint-down(md)
+	.top-slider
+		.arrow-left
+			left: 325px
+		.arrow-right
+			right: 325px
+	.menu-mobyle
+		display: block
+	.menu-desktop
+		display: none
+	.thanks
+		.block
+			div.info
+				padding-left: 20px
+				padding-right: 20px
+	.advantages
+		.block-clear
+			padding: 20px
+			width: 100%
+	.top-slider
+		min-height: 350px
+		padding-top: 80px
+
+//Small: ≥576px ---- проверил
++media-breakpoint-down(sm)
+	// *
+	// 	transition-property: none !important
+	// 	transform: none !important
+	// 	animation: none !important
+	.top-slider
+		min-height: 370px
+		padding-top: 50px
+	.top-slider
+		.arrow-left
+			left: 230px
+		.arrow-right
+			right: 230px
+	.advantages
+		.block-clear
+			padding: 0
+			width: 100%
+	.advantages
+		.advantages-block
+			margin-top: 20px
+			margin-bottom: 20px
+			padding: 0 150px
+			transition-property: none !important
+			transform: none !important
+			animation: none !important
+	.thanks
+		.block
+			div.info
+				padding-left: 140px
+				padding-right: 140px
+	.employees
+		.sliders-employees-circle-left
+			left: -50px
+		.sliders-employees-circle-right
+			right: -50px
+		.associate
+			.content
+				padding: 0 70px
+	.services
+		.block
+			padding: 10px
+			min-height: auto
+
+//Extra small: >0
++media-breakpoint-down(xs)
+	.top-slider
+		padding-top: 40px
+		padding-bottom: 20px
+	.employees
+		.sliders-employees-circle-left
+			left: 0
+		.sliders-employees-circle-right
+			right: 0
+	.advantages
+		.advantages-block
+			margin-top: 20px
+			margin-bottom: 20px
+			padding: 0 30px
+	.thanks
+		.block
+			div.info
+				padding-left: 20px
+				padding-right: 20px
+	.arbitrage-practice
+		.block-of-questions
+			.collapsible
+				padding-left: 10px
+				&::before
+					left: 10px
+	.top-slider
+		.arrow-center
+			display: none
+		.arrow-left
+			left: 42%
+		.arrow-right
+			right: 42%
+	.modal-call-order
+		.modal-content
+			width: auto
+
+
+/*==========  Mobile First  ==========*/
+// Стили наследуются от меньшего экрана к большему
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)

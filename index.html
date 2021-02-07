@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>ПравДА - юридическая компания</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body onload="finishLoad()">
+
+	<!-- Custom HTML -->
+	
+	<div id="loader"></div>
+
+	<div id="mainBlock">
+
+		<!-- Кнопка вверх -->
+		<i id="go_to_top" class="fa fa-angle-double-up go_to_top animated infinite pulse" aria-hidden="true"></i>
+
+		<!-- Верхний информационный блок -->
+		<div class="top-block">
+			<div class="container">
+				<h1>ПравДА</h1>
+				<h2>Юридическая компания</h2>
+				<div class="row">
+					<div class="col-md-2 col-lg-3"></div>
+					<div class="col-md-8 col-lg-6">
+						<div class="info">
+							<span class="number">+7 (111) 11-11-111</span>
+							<button id="call-order-button" class="request-a-call">Заказать звонок</button>
+						</div>
+					</div>
+					<div class="col-md-2 col-lg-3"></div>
+				</div>
+				<div class="top-menu menu-desktop sticky-element">
+					<a class="go_to" href="services">Услуги</a>
+					<a class="go_to" href="advantages">Преимущества</a>
+					<a class="go_to" href="thanks">Благодарность</a>
+					<a class="go_to" href="arbitrage-practice">Судебная практика</a>
+					<a class="go_to" href="employees">Наши сотрудники</a>
+					<a class="go_to" href="contacts">Контакты</a>
+				</div>
+				<div class="menu-mobyle sticky-element-mobyle">
+					<span onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i>Меню</span>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Верхний слайдер -->
+		<div class="top-slider">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-1"></div>
+					<div class="col-md-12 col-lg-10">
+						<div class="slider-theses">
+							<div>
+								<p>Но главное, что необходимо, это, - когда мы пишем закон для всей страны, - иметь в виду разумных и сильных, а не пьяных и слабых. Пётр Столыпин</p>
+							</div>
+							<div>
+								<p>Адвокат нужен лишь в той стране, где государство уважает права своих граждан. Ибо адвокат действует только одной и единственной силой: силой права. Там же, где право граждан – лишь жалкое изображение подобного и в отношении людей предпочитают действовать государственным произволом, где право силы предпочтительнее силы права, адвокат в такой стране бессилен. И потому он не нужен.</p>
+							</div>
+							<div>
+								<p>Цивилизация предполагает свободу критики правительства, свободу печати и выступлений, свободу религиозных верований, отсутствие расовых преследований, юридическую законность и справедливость. Уинстон Черчилль</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-1"></div>
+				</div>
+				<div class="arrow-center">
+					<a href="services" class="go_to"><i class="fa fa-angle-double-down arrow-bottom animated infinite bounce" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Блок Услуги -->
+		<div id="services" class="services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-10">
+						<p class="text-services">Необходимость воспользоваться услугами юридической компании может возникнуть у каждого. Кому-то нужно проконсультироваться по интересующей теме, кто-то решил развестись и справедливо разделить имущество, а у кого-то и вовсе обстоятельства сложились так, что требуется помощь адвоката по уголовным делам. Что бы ни произошло – мы готовы вам в этом помочь.</p>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+
+				<h2>УСЛУГИ</h2>
+
+				<div class="row services-blocks">
+					<div class="col-md-4 col-lg-3"><button class="block">Семейные споры</button></div>
+					<div class="col-md-4 col-lg-3"><button class="block">Автоюрист</button></div>
+					<div class="col-md-4 col-lg-3"><button class="block">Земельные споры</button></div>
+					<div class="col-md-4 col-lg-3"><button class="block">Юрист по кредитам</button></div>
+
+					<div class="col-md-4 col-lg-3"><button class="block">Банкротство физических лиц </button></div>
+					<div class="col-md-4 col-lg-3"><button class="block">Жилищные споры</button></div>
+					<div class="col-md-4 col-lg-3"><button class="block">Юрист по недвижимости</button></div>
+					<div class="col-md-4 col-lg-3"><button class="block">Юрист по трудовому праву</button></div>
+
+					<div class="col-md-4 col-lg-3"><button class="block">Составление исков, претензий, жалоб</button></div>
+					<div class="col-md-4 col-lg-3"><button class="block">Наследственные споры</button></div>
+					<div class="col-md-4 col-lg-3"><button class="block">Защита прав потребителей</button></div>
+					<div class="col-md-4 col-lg-3"><button class="block">Арбитражные споры</button></div>
+
+					<div class="col-md-4 col-lg-3"><button class="block">Взыскание долгов</button></div>
+					<div class="col-md-4 col-lg-3"><button class="block">Сопровождение бизнеса</button></div>
+					<div class="col-md-4 col-lg-3"><button class="block">Бухгалтерские услуги</button></div>
+					<!-- <div class="col-md-3"><button class="block">Далеко-далеко за словесными горами в стране.</button></div> -->
+				</div>
+			</div>
+		</div>
+
+		<!-- Блок Преимущества -->
+		<div id="advantages" class="advantages">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-lg-2 wow fadeIn advantages-block" data-wow-delay="0.2s">
+						<div class="fon-block"><i class="fa fa-rouble" aria-hidden="true"></i></div>
+						<p>Выгодные условия и тарифы</p>
+					</div>
+					<div class="col-md-4 col-lg-2 wow fadeIn advantages-block" data-wow-delay="0.4s">
+						<div class="fon-block"><i class="fa fa-percent" aria-hidden="true"></i></div>
+						<p>Действующая система скидок</p>
+					</div>
+					<div class="col-md-4 col-lg-2 wow fadeIn advantages-block" data-wow-delay="0.6s">
+						<div class="fon-block"><i class="fa fa-users" aria-hidden="true"></i></div>
+						<p>Нас рекомендуют друзьям</p>
+					</div>
+					<div class="block-clear"></div>
+					<div class="col-md-4 col-lg-2 wow fadeIn advantages-block" data-wow-delay="0.8s">
+						<div class="fon-block"><i class="fa fa-balance-scale" aria-hidden="true"></i></div>
+						<p>Богатый опыт и положительная практика ведения дел</p>
+					</div>
+					<div class="col-md-4 col-lg-2 wow fadeIn advantages-block" data-wow-delay="1.0s">
+						<div class="fon-block"><i class="fa fa-line-chart" aria-hidden="true"></i></div>
+						<p>Нацеленность на успешный результат</p>
+					</div>
+					<div class="col-md-4 col-lg-2 wow fadeIn advantages-block" data-wow-delay="1.2s">
+						<div class="fon-block"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
+						<p>Честный и индивидуальный подход к каждому клиенту</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Блок Благодарности -->
+		<div id="thanks" class="thanks">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<h2>МЫ ОКАЗАЛИ ПОМОЩЬ И НАМ ВЫРАЗИЛИ СВОЮ БЛАГОДАРНОСТЬ</h2>
+						<h4>Большинство клиентов, которые обращались к нашим юристам были довольны полученным результатом, так как он соответствовал их ожиданиям.</h4>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="block">
+							<span class="number counter">82</span>
+							<div class="info">Число довольных клиентов за этот год</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="block">
+							<span class="number counter">61</span>
+							<div class="info">Сумма положительных решений за этот год</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="block">
+							<span class="number counter">8</span>
+							<div class="info">Количество лет работы в области юриспруденции</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Блок Судебная практика -->
+		<div id="arbitrage-practice" class="arbitrage-practice">
+			<div class="container">
+				<div class="row info">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<h2>СУДЕБНАЯ ПРАКТИКА КОМПАНИИ ПРАВДА</h2>
+						<p>Здесь Вы можете ознакомиться с некоторыми решениями, на исход которых повлияли наши юристы. Именно ими были подготовлены те исковые заявления или возражения, по которым они вынесены.</p>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+				<div class="row block-of-questions" id="detailed-information">
+					<div class="col-md-6">
+						<button class="collapsible">Продавец скрыл информацию о стоимости Товара</button>
+						<div class="content">
+							<p>Клиент заключил Договор купли-продажи комплекта косметики "DeSheli". Товар ею был оплачен за счет привлечения кредитных средств. Однако Продавец не исполнил свои обязательства в части предоставления информации о Товаре, а именно не указал в Договоре полную стоимость Товара в наборе, об изготовителе, сведений на русском языке, о способах применения и составе, что ввело Клиента в заблуждение, ведь он рассчитывал совсем на другую стоимость.</p>
+							<a target="_blank" href="doc/ntd-20150720-122606.pdf"><button>Узнать результат</button></a>
+						</div>
+						
+						<button class="collapsible">Продавец просрочил срок поставки мебели</button>
+						<div class="content">
+							<p>Клиент заключила с ООО "Арт-Лайн" Договор купли-продажи мебели по образцам. Согласно условиям заключенного Договора, ООО "Арт-Лайн" обязалось передать в ее собственность  м/с "Валерия" в течении 70-ти рабочих дней, однако Товар в обозначенный Договором срок Ответчиком не был поставлен.</p>
+							<a target="_blank" href="doc/ntd-20150720-122606.pdf"><button>Узнать результат</button></a>
+						</div>
+
+						<button class="collapsible">Ущерб, причиненный в результате ДТП взыскан с работника</button>
+						<div class="content">
+							<p>Работник - водитель доказал через суд свою невиновность в произошедшем ДТП, поскольку отвечать должен был работодатель, так как именно он обязан был обеспечить соответствие технического состояния транспортного средства требованиям безопасности дорожного движения и не допускать транспортное средство к эксплуатации при наличии у него неисправности, угрожающей безопасности дорожного движения.</p>
+							<a target="_blank" href="doc/ntd-20150720-122606.pdf"><button>Узнать результат</button></a>
+						</div>
+
+						<button class="collapsible">Перевозка груза с нарушением допустимых габаритов</button>
+						<div class="content">
+							<p>Водитель оспорил постановление ГИБДД о признании его виновным в перевозке груза с нарушением допустимых габаритов. Через суд добился невиновности, возместил убытки за незаконное привлечение к ответственности.</p>
+							<a target="_blank" href="doc/ntd-20150720-122606.pdf"><button>Узнать результат</button></a>
+						</div>
+
+						<button class="collapsible">Пешеход против автобуса</button>
+						<div class="content">
+							<p>Пешеход, которого сбил автобус, компенсировала моральный ущерб за причиненный вред здоровью с организации-собственника автобуса и взыскала со страховой компании утраченный заработок за период временной нетрудоспособности.</p>
+							<a target="_blank" href="doc/ntd-20150720-122606.pdf"><button>Узнать результат</button></a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<button class="collapsible">Наследодатель надлежащим образом не оформил право на гараж</button>
+						<div class="content">
+							<p>При жизни наследодатель был принят в члены гаражного кооператива и ему выделили земельный участок под строительство гаража, однако построенный им гараж надлежащим образом он так и не оформил, в связи с чем наследник не смог вступить в наследство.</p>
+							<a target="_blank" href="doc/ntd-20150720-122606.pdf"><button>Узнать результат</button></a>
+						</div>
+						
+						<button class="collapsible">Автомобиль продан без согласия супруги</button>
+						<div class="content">
+							<p>Муж продал автомобиль при разводе без согласия жены и не отдал ей половину вырученных денег. В пользу супруги через суд взыскана соответствующая компенсация.</p>
+							<a target="_blank" href="doc/ntd-20150720-122606.pdf">	<button>Узнать результат</button></a>
+						</div>
+
+						<button class="collapsible">Компенсация морального вреда за незаконное отстранение от работы</button>
+						<div class="content">
+							<p>Работодатель компенсировал работнику моральный вред за незаконное отстранение от работы и возместил утраченный заработок.</p>
+							<a target="_blank" href="doc/ntd-20150720-122606.pdf"><button>Узнать результат</button></a>
+						</div>
+
+						<button class="collapsible">Товар поставлен, однако контрагентом не оплачен</button>
+						<div class="content">
+							<p>Индивидуальный предприниматель взыскал с организации контрагента долг и неустойку за поставленный, но не оплаченный товар.</p>
+							<a target="_blank" href="doc/ntd-20150720-122606.pdf"><button>Узнать результат</button></a>
+						</div>
+
+						<button class="collapsible">Страховщик уклонялся от выплаты страхового возмещения, так как автомобиль угнан со всеми регистрационными документами</button>
+						<div class="content">
+							<p>При покупке новенькой Toyota RAV4 клиент оформил КАСКО и не зря, ведь всего через месяц его авто был угнан неизвестными лицами, при этом все регистрационные документы (ПТС, СТС, Договоры купли-продажи и сам полис) остались в автомобиле. На этом основании страховщик всячески уклонялся от страховой выплаты, требуя от клиента предоставить оргинилы регистрационных документов. Страховая выплата взыскана в судебном порядке.</p>
+							<a target="_blank" href="doc/ntd-20150720-122606.pdf"><button>Узнать результат</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Блок Сотрудники -->
+		<div id="employees" class="employees">
+			<div class="container">
+				<div class="row info">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<h2>НАШИ СОТРУДНИКИ</h2>
+						<p>Здесь Вы можете ознакомиться с некоторыми решениями, на исход которых повлияли наши юристы. Именно ими были подготовлены те исковые заявления или возражения, по которым они вынесены.</p>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<div class="sliders-employees">
+							<div class="associate associate-1">
+								<div class="image"></div>
+								<h3>Илья Сергеевич</h3>
+								<p class="prof">Консультант-юрист</p>
+								<p class="content">Опытный сотрудник компании "ПравДА" всегда готов ответить на ваши вопросы.</p>
+								<div class="social">
+									<a href="#"><img src="img/employees/vk.png" alt="Группа Вконтакте"></a>
+									<a href="#"><img src="img/employees/fb.png" alt="Группа Facebook"></a>
+								</div>
+							</div>
+
+							<div class="associate associate-2">
+								<div class="image"></div>
+								<h3>Анна Борисовна</h3>
+								<p class="prof">Консультант-юрист</p>
+								<p class="content">Опытный сотрудник компании "ПравДА" всегда готов ответить на ваши вопросы.</p>
+								<div class="social">
+									<a href="#"><img src="img/employees/vk.png" alt="Группа Вконтакте"></a>
+									<a href="#"><img src="img/employees/fb.png" alt="Группа Facebook"></a>
+								</div>
+							</div>
+
+							<div class="associate associate-3">
+								<div class="image"></div>
+								<h3>Ольга Дмитриевна</h3>
+								<p class="prof">Консультант-юрист</p>
+								<p class="content">Опытный сотрудник компании "ПравДА" всегда готов ответить на ваши вопросы.</p>
+								<div class="social">
+									<a href="#"><img src="img/employees/vk.png" alt="Группа Вконтакте"></a>
+									<a href="#"><img src="img/employees/fb.png" alt="Группа Facebook"></a>
+								</div>
+							</div>
+
+							<div class="associate associate-4">
+								<div class="image"></div>
+								<h3>Ирина Павловна</h3>
+								<p class="prof">Консультант-юрист</p>
+								<p class="content">Опытный сотрудник компании "ПравДА" всегда готов ответить на ваши вопросы.</p>
+								<div class="social">
+									<a href="#"><img src="img/employees/vk.png" alt="Группа Вконтакте"></a>
+									<a href="#"><img src="img/employees/fb.png" alt="Группа Facebook"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Блок Контакты -->
+		<div id="contacts" class="contacts">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae59376aa8e694e9543e4a74e05920c6813351c70fb4b39f179d85aaacca919c7&amp;source=constructor" frameborder="0"></iframe>
+					</div>
+					<div class="col-md-6 info">
+						<p class="contacts-header">Наши контакты:</p>
+						<p>Адрес: г. Москва, ул. Лермонтова, д. 000<br>Почта: mail@gmail.com<br>Телефон: +7 (111) 11-11-111<br>Телефон: +7 (111) 11-11-111</p>
+						<form action="#" method="post" class="contacts-form">
+							<input type="text" name="name" placeholder="Имя" required><br>
+							<input type="email" name="email" placeholder="Email" required><br>
+							<textarea name="message" placeholder="Сообщение" required></textarea><br>
+							<button type="submit">Отправить</button>
+							<input type="hidden" name="send-form-contact">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Блок Подвал -->
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<!-- <div class="col-lg-1"></div> -->
+					<div class="col-md-7 col-lg-8">
+						<p class="footer-link"><a href="#">ПравДА</a></p>
+						<p>Юридическая компания «ПравДА» оказывает профессиональные юридические услуги по региону и всей территории РФ физическим и юридическим лицам в суде и в до судебном порядке.</p>
+					</div>
+					<div class="col-md-5 col-lg-4">
+						<div class="social">
+							<a href="#"><img src="img/footer/vk.png" alt="Группа Вконтакте"></a>
+							<a href="#"><img src="img/footer/ok.png" alt="Группа Одноклассники"></a>
+							<a href="#"><img src="img/footer/f.png" alt="Группа Facebook"></a>
+						</div>
+						<p>Почта: mail@gmail.com<br>Телефон: <nobr>+7 (111) 11-11-111</nobr><br>Телефон: <nobr>+7 (111) 11-11-111</nobr></p>
+					</div>
+					<!-- <div class="col-lg-1"></div> -->
+				</div>
+			</div>
+		</div>
+
+		<!-- Модальное окно "Заказать звонок" -->
+		<div id="modal-call-order" class="modal-call-order">
+			<div class="modal-content">
+				<span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+				<h2>Заказать звонок</h2>
+				<p>Укажите свой контактный телефон, нажмите кнопку отправить и мы перезвоним Вам в кратчайшие сроки.</p>
+				<form method="POST" action="#">
+					<input type="text" name="fname" placeholder="Укажите ваше имя" required><br>
+					<input type="text" name="phone" placeholder="Укажите ваш телефон" required><br>
+					<button type="submit">Отправить</button>
+					<input type="hidden" name="send-cell">
+				</form>
+			</div>
+		</div>
+
+		<!-- Мобильное меню -->
+		<div id="mobyle-menu" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+			<div class="overlay-content">
+				<a class="go_to" href="services">Услуги</a>
+				<a class="go_to" href="advantages">Преимущества</a>
+				<a class="go_to" href="thanks">Благодарность</a>
+				<a class="go_to" href="arbitrage-practice">Судебная практика</a>
+				<a class="go_to" href="employees">Наши сотрудники</a>
+				<a class="go_to" href="contacts">Контакты</a>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+	<!-- BEGIN JIVOSITE CODE {literal} -->
+	<script type='text/javascript'>
+	(function(){ var widget_id = 'vOVQYUQx7d';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+	</script>
+	<!-- {/literal} END JIVOSITE CODE -->
+
+</body>
+</html>
